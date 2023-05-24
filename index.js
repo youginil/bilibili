@@ -38,11 +38,7 @@
     }
 
     const ob = new MutationObserver((mutationList) => {
-        for (const mu of mutationList) {
-            if (mu.type === "childList") {
-                resume();
-            }
-        }
+        resume();
     });
 
     ob.observe(body, { attributes: false, childList: true, subtree: false });
