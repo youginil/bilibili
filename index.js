@@ -25,9 +25,9 @@
                 const child = body.children[i];
                 if (child.className === "bili-mini-mask") {
                     child.remove();
-                    const playBtn = document.getElementsByClassName(
-                        "bpx-player-ctrl-play"
-                    )[0];
+                    const playBtn = document.querySelector(
+                        ".bpx-player-control-bottom-left > .bpx-player-ctrl-play"
+                    );
                     if (playBtn) {
                         playBtn.click();
                     }
