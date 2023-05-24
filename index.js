@@ -37,7 +37,7 @@
         }, 1000);
     }
 
-    const ob = new MutationObserver((mutationList) => {
+    const ob = new MutationObserver(() => {
         resume();
     });
 
